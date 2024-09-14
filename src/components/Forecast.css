@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.astro-header,.forcast-header,.hour-header{
+    margin-left: 20px;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: small-caps;
+    color: #1f618d ; 
+    padding: 10px;
+}
+.forcast-header{
+    text-align: center;
+}
+.astro{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-left: 33px;
+}
+
+h2{
+    color: black;
+    font-size: 25px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    grid-auto-flow: column;
+}
+
+.astro-names{
+    color: #1f618d ; 
+    font-family: "Kanit", sans-serif;
+}
+.hr{
+    border-bottom: 3px solid #1f618d;
+    margin: 20px;
+}
+
+
+@media (max-width: 1100px){
+    .astro{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+}
+

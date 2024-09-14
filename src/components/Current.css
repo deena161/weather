@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.current-header{
+    margin-left: 20px;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: small-caps;
+    color: #1f618d ; 
+}
+
+.condition{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.condition img{
+    width: 80px;
+    height: 80px;
+}
+
+.condition-details{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+.condition-details div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(94, 107, 111, 0.5);
+    border-radius: 10px;
+    width: 170px;
+    height: 130px;
+}
+
+.condition-details div h2,.condition h2{
+    color: #1f618d ; 
+    font-family: "Kanit", sans-serif;
+    font-size: 28px;
+}
+.condition-details div h1{
+    color: black;
+    font-size: 28px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@media (max-width:1100px){
+    .current-header{
+        padding: 10px;
+    }
+    .condition-details{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+        gap: 20px;
+        padding: 0;
+    }
+
+    .condition img{
+        width: 200px;
+        height: 200px;
+    }
+}
